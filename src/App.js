@@ -26,7 +26,6 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    //whenever positions are changed via setState, reassign adjacent true/false
   }
 
   createTiles(num) {
@@ -64,7 +63,6 @@ class App extends Component {
 
     // console.log(_array);
     this.setState({ tiles: _array })
-    //build grid 
   };
 
   assignAdjacent(_tiles) {
@@ -125,11 +123,12 @@ class App extends Component {
   }
 
   switchTiles(clickedTilePos, blankTilePos) {
-    //if (clicked and blank are in same row || col and adjacent ) {
-    //holder array to copy both of the positions 
-    //assign clickedTilePos to holder's copy of blankTilePos
-    //assign blankTilePos to holder's copy of clickedTilePos
-    //setState with new positions
+    //if clicked adjacent prop = true
+      //holder array to copy both of the positions 
+      //assign clickedTilePos to holder's copy of blankTilePos
+      //assign blankTilePos to holder's copy of clickedTilePos
+      //assignAdjacents()
+      //setState with new positions
 
     // }
     //else do nothing, not a valid move
